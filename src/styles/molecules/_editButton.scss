@@ -1,0 +1,51 @@
+/**
+ * A Standard Button
+ */
+
+.m-actionButton {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	user-select: none;
+	margin: 24px auto;
+	font-size: $font-size-base;
+	font-weight: $font-weight-bold;
+	width: 248px;
+	height: 48px;
+	border-radius: 40px;
+	background-color: $background-color-quaternary;
+	color: $text-color-primary;
+	padding-left: 20px;
+	padding-right: 26px;
+	// margin-top: 104px;
+	cursor: pointer;
+
+	&--centeredText {
+		position: relative;
+		justify-content: center;
+	}
+
+	&__icon {
+		// width: 8px;
+		filter: $icon-filter-primary;
+
+		&--edit {
+			height: 32px;
+			transform: rotate(45deg);
+		}
+
+		&--clipboard {
+			position: absolute;
+			right: 20px;
+			height: 22px;
+		}
+	}
+
+	& ~ .m-actionButton {
+		margin-top: 0;
+	}
+
+	&:last-of-type {
+		margin-bottom: 120px;
+	}
+}

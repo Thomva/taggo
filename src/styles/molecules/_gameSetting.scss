@@ -1,0 +1,52 @@
+/**
+ * The
+ */
+
+.m-gameSetting {
+	display: flex;
+	width: 296px;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 auto;
+	margin-bottom: 16px;
+	font-size: $font-size-small;
+	color: $text-color-tertiary;
+
+	&__label {
+		display: block;
+		width: fit-content;
+		font-weight: $font-weight-bold;
+	}
+
+	&--disabled {
+		filter: opacity(0.5);
+	}
+
+	&__inputTime {
+		cursor: pointer;
+		margin-right: 4px;
+		border-bottom: 2px solid $border-color-tertiary;
+	}
+
+	&__inputText {
+		cursor: pointer;
+		text-transform: capitalize;
+		border-bottom: 2px solid $border-color-tertiary;
+	}
+
+	&__inputPassword {
+		font-weight: $font-weight-light;
+		border: none;
+		background-color: transparent;
+		border-bottom: 2px solid $border-color-tertiary;
+		width: 96px;
+		caret-color: $text-color-tertiary;
+		color: $text-color-tertiary;
+		text-align: right;
+
+		&:focus {
+			outline: none;
+			// color: $text-color-tertiary;
+		}
+	}
+}

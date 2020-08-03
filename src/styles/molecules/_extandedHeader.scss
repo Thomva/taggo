@@ -1,0 +1,25 @@
+/**
+ * The Map Styles
+ */
+
+.m-extendedHeader {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0 auto;
+
+	&__span {
+		font-size: $font-size-small;
+		font-weight: $font-weight-light;
+	}
+
+	&__mainHeading {
+		font-weight: $font-weight-x-bold;
+		margin-top: 8px;
+	}
+
+	&--home {
+		margin-top: 64px;
+		margin-bottom: 94px;
+	}
+}

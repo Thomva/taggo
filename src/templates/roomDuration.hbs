@@ -1,0 +1,19 @@
+<div class="u-container u-spacer-t">
+  {{pageTitleHeader}}
+
+  <div class="m-slider">
+    <label for="duration" class="m-slider__label"><span class="m-slider__durationSpan" id="duration-span">20</span>min</label>
+    <div class="m-slider__limitsContainer">
+      <span class="m-slider__lowestValue">5</span>
+      <span class="m-slider__highestValue">60</span>
+    </div>
+    {{customSlider "duration-input" "5" "60" "20"}}
+    {{!-- <div class="m-customSlider">
+      <div class="m-customSlider__filledTrack"></div>
+      <div class="m-customSlider__handle"></div>
+    </div>
+    <input type="range" min="5" max="60" value="20" id="duration" class="m-slider__inputSlider"> --}}
+  </div>
+
+  {{button "Save" 3 "btn-save" "a-button--low"}}
+</div>

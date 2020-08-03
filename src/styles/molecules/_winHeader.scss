@@ -1,0 +1,19 @@
+/**
+ * The logo to put in our header (navigation)
+ */
+
+.m-winHeader {
+	color: $text-color-tertiary;
+
+	&__user, &__text {
+		font-size: $font-size-x-large;
+		font-weight: $font-weight-x-bold;
+		margin: 0;
+		text-align: center;
+	}
+
+	&__text {
+		margin-top: 8px;
+		margin-bottom: 32px;
+	}
+}

@@ -1,0 +1,45 @@
+/**
+ * The Header Styles
+ */
+
+.o-form {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	left: -$gutter-sm;
+	width: 100vw;
+	background-color: $background-color-primary;
+	z-index: layer("auto");
+	padding-top: 48px;
+	margin: 0 auto;
+
+	&--shiftLeft {
+		left: -$gutter;
+	}
+
+	&--start {
+		@include shadow-up;
+		left: -$gutter;
+	}
+
+	&__link {
+		// margin-top: 24px;
+		margin-top: 16px;
+		font-size: $font-size-small;
+		font-weight: $font-weight-bold;
+		color: $text-color-secondary;
+		width: fit-content;
+		cursor: pointer;
+	}
+
+	// = first of class
+	& > .a-button {
+		// margin-top: 48px;
+		margin-top: 40px;
+
+		& ~ .a-button {
+			margin-top: 16px;
+		}
+	}
+}

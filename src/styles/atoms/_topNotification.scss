@@ -1,0 +1,19 @@
+.a-topNotification {
+	position: absolute;
+	top: -40px;
+	// top: 0;
+	width: 100%;
+	height: 40px;
+	transition: top 100ms ease-in-out;
+
+	&__content {
+		margin: 0 auto;
+		padding: 10px 48px;
+		border-radius: 0 0 24px 24px;
+		width: fit-content;
+		max-width: 90%;
+		height: 100%;
+		background-color: $background-color-primary-2;
+		color: $text-color-tertiary;
+	}
+}

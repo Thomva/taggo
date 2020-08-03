@@ -1,0 +1,20 @@
+<div class="u-container u-spacer-t">
+  {{customHeader "Show Private Games?"}}
+
+  <div id="card-container"></div>
+  <div class="m-radioGroup">
+    <div class="m-radioGroup__element">
+      <input class="m-radioGroup__radio" type="radio" name="private" value="null" id="all"><label  for="all" class="m-radioGroup__label">All</label class="m-radioGroup__label">
+    </div>
+
+    <div class="m-radioGroup__element">
+      <input class="m-radioGroup__radio" type="radio" name="private" value="1" id="onlyPub"><label  for="onlyPub" class="m-radioGroup__label">Only Public</label>
+    </div>
+
+    <div class="m-radioGroup__element">
+      <input class="m-radioGroup__radio" type="radio" name="private" value="0" id="onlyPriv"><label  for="onlyPriv" class="m-radioGroup__label">Only Private</label>
+    </div>
+  </div>
+
+  {{button "Save" 3 "btn-save" "a-button--low"}}
+</div>

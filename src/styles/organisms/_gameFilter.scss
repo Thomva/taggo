@@ -1,0 +1,34 @@
+/**
+ * The Game Header Styles
+ */
+
+.o-gameFilter {
+	display: flex;
+	width: 296px;
+	margin: 0 auto;
+	justify-content: space-around;
+	margin-top: 48px;
+	margin-bottom: 24px;
+	color: $text-color-tertiary;
+
+	&__filterElement {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100px;
+	}
+
+	&__filterIcon {
+		height: 16px;
+		margin-bottom: 16px;
+		filter: $icon-filter-tertiary;
+	}
+
+	&__inputSpan {
+		// display: block;
+		// position: relative;
+		text-align: center;
+		border-bottom: 2px solid $border-color-tertiary;
+		cursor: pointer;
+	}
+}

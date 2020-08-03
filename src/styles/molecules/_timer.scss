@@ -1,0 +1,99 @@
+/**
+ * The logo to put in our header (navigation)
+ */
+
+.m-timer {
+	display: flex;
+	// position: relative;
+	// justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	margin: 0 auto;
+	margin-top: 72px + 32px + 16px;
+	// width: 216px;
+	// height: 16px;
+	z-index: layer("base");
+
+	// &::before {
+	// 	position: absolute;
+	// 	content: "";
+	// 	background-color: $background-color-secondary;
+	// 	width: 300px;
+	// 	height: 60px;
+	// 	border-radius: 100px;
+	// 	top: -20px;
+	// 	left: -60px;
+	// }
+
+	&__bar {
+		z-index: layer("base");
+		position: relative;
+		width: 216px;
+		height: 16px;
+	}
+
+	&__totalTimeBar {
+		position: absolute;
+		// background-color: $mercury;
+		background-color: $background-color-secondary;
+		width: 100%;
+		height: 10px;
+		border-radius: 0 20px 0 0;
+		bottom: 0;
+	}
+
+	&__timeLeftBar {
+		position: absolute;
+		// background-color: $white;
+		background-color: $background-color-quaternary;
+		border-radius: 0 20px 0 0;
+		height: 20px;
+		width: 100%;
+		left: 0;
+		bottom: 0;
+	}
+
+	&__clock {
+		z-index: layer("base");
+		background-image: url("../assets/icons/duration.svg");
+		background-size: contain;
+		background-position: center;
+		background-repeat: no-repeat;
+		width: 32px;
+		height: 32px;
+		filter: $icon-filter-quaternary;
+		margin-bottom: 20px;
+
+		transition: transform 100ms;
+
+		&:hover {
+			transform: rotate(360deg);
+		}
+	}
+
+	// &__clockBorder {
+	// 	position: absolute;
+	// 	border-radius: 50%;
+	// 	border: 2px solid $white;
+	// 	@include square(32px);
+	// 	left: -32px - 16px;
+	// 	bottom: -8px;
+	// 	transform-origin: center;
+
+	// 	// Rotate via script
+	// 	&:hover {
+	// 		transform: rotate(360deg);
+	// 		transition-duration: 0.5s;
+	// 	}
+	// }
+
+	// &__clockHand {
+	// 	position: absolute;
+	// 	height: 10px;
+	// 	width: 2px;
+	// 	border-radius: 10px;
+	// 	background-color: $white;
+	// 	left: 13px;
+	// 	bottom: 13px;
+	// }
+}

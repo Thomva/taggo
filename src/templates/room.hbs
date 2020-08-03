@@ -1,0 +1,32 @@
+<div class="u-container">
+  {{!-- {{customHeaderExtended "Moderator:" "User12345" "moderator"}} --}}
+  {{switchButton "Public" "Private" "btn-public-private"}}
+
+  <div class="m-gameSetting">
+    <label for="game-duration" class="m-gameSetting__label">Game Duration</label>
+    <div class="m-gameSetting__inputContainer"><span id="game-duration" class="m-gameSetting__inputTime">20</span><span class="m-gameSetting__unit">min</span></div>
+  </div>
+
+  <div class="m-gameSetting">
+    <label for="map" class="m-gameSetting__label">Map</label>
+    <span id="map" class="m-gameSetting__inputText">Korenmarkt</span>
+    {{!-- <input type="text" id="map" class="m-gameSetting__inputText"> --}}
+  </div>
+  
+  {{!-- <div class="m-gameSetting m-gameSetting--disabled"> --}}
+  <div id="password-setting" class="m-gameSetting">
+    <label for="password" class="m-gameSetting__label">Password</label>
+    <input type="password" id="password" class="m-gameSetting__inputPassword" autocomplete="off">
+  </div>
+
+  <div class="m-roomPlayers">
+    <div class="m-roomPlayers__playersContainer" id="players-container">
+      <div class="m-roomPlayers__moderator" id="moderator"></div>
+      <div class="m-roomPlayers__playerList" id="player-list"></div>
+    </div>
+    <a class="m-roomPlayers__inviteBtn" id="invite">+ invite</a>
+  </div>
+
+  {{button "Ready" 3 "btn-ready" "a-button--low"}}
+  {{button "Leave" 2 "btn-leave" "a-button--back"}}
+</div>

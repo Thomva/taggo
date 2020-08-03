@@ -1,0 +1,21 @@
+<div class="u-container u-spacer-t">
+  {{customHeader "Browse Games"}}
+  <div class="o-gameFilter">
+    <div class="o-gameFilter__filterElement">
+      <img src="../assets/icons/duration.svg" alt="duration-icon" class="o-gameFilter__filterIcon">
+      <span class="o-gameFilter__inputSpan" id="btn-duration">All</span>
+    </div>
+
+    <div class="o-gameFilter__filterElement">
+      <img src="../assets/icons/location.svg" alt="location-icon" class="o-gameFilter__filterIcon">
+      <span class="o-gameFilter__inputSpan" id="btn-map">All</span>
+    </div>
+
+    <div class="o-gameFilter__filterElement">
+      <img src="../assets/icons/lock.svg" alt="private-icon" class="o-gameFilter__filterIcon">
+      <span class="o-gameFilter__inputSpan" id="btn-private">All</span>
+    </div>
+  </div>
+  <div class="o-cardContainer o-cardContainer--small" id="card-container"></div>
+  {{button "Back" 2 "btn-back" "a-button--back"}}
+</div>

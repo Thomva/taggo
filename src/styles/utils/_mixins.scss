@@ -1,0 +1,63 @@
+// square
+// ---
+// Return the width and height of the square
+// ------------------------------------------------------------------------- /
+@mixin square($size) {
+	width: $size;
+	height: $size;
+}
+
+// card
+// ---
+// Return a basic card
+// ------------------------------------------------------------------------- /
+@mixin card($width, $height, $borderRadius) {
+	width: $width;
+	height: $height;
+	border-radius: $borderRadius;
+}
+
+// at
+// ---
+// screen and min-width breakpoint
+// ------------------------------------------------------------------ /
+@mixin at($_min-width) {
+	@media screen and (min-width: $_min-width) {
+		@content;
+	}
+}
+
+// to
+// ---
+// screen and max-width breakpoint
+// ------------------------------------------------------------------ /
+@mixin to($_max-width) {
+	@media screen and (max-width: $_max-width) {
+		@content;
+	}
+}
+
+
+// shadow-up
+// ---
+// box-shadow casting up
+// ------------------------------------------------------------------ /
+@mixin shadow-up() {
+	box-shadow: 0 (-$shadow-depth) $shadow-blur $shadow-color;
+}
+
+// // shadow-up
+// // ---
+// // box-shadow casting up (custom)
+// // ------------------------------------------------------------------ /
+// @mixin shadow-up-custom($_custom-shadom-depth) {
+// 	box-shadow: 0 (-$_custom-shadom-depth) $shadow-blur $shadow-color;
+// }
+
+// shadow-down
+// ---
+// box-shadow casting down
+// ------------------------------------------------------------------ /
+@mixin shadow-down() {
+	box-shadow: 0 $shadow-depth $shadow-blur $shadow-color;
+}

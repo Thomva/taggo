@@ -1,0 +1,13 @@
+<div class="u-container--small u-background--light">
+  {{> header }}
+  <div class="m-tabs">
+    <a class="m-tabs__tab" id="btn-login">Log In</a>
+    <a class="m-tabs__tab m-tabs__tab--active">Create Account</a>
+  </div>
+  <form action="" class="o-form o-form--start">
+    {{textInput "Username" "User12345" "" "username"}}
+    {{button "Create Account" 3 "btn-register"}}
+  </form>
+
+  {{button "Back" 2 "btn-back" "a-button--back"}}
+</div>

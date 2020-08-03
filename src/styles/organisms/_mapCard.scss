@@ -1,0 +1,40 @@
+/**
+ * The Game Header Styles
+ */
+
+.o-mapCard {
+	width: 296px;
+	height: 152px;
+	border-radius: 24px;
+	background-color: $background-color-tertiary;
+	margin: 16px auto;
+	margin-top: 0;
+	cursor: pointer;
+	font-size: $font-size-small;
+	color: $text-color-primary;
+	@include shadow-down;
+
+	&__header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+		height: 40px;
+		background-color: $background-color-quaternary;
+		border-radius: 24px 24px 0 0;
+		padding: 0 16px;
+	}
+
+	&__mapName {
+		font-weight: $font-weight-bold;
+		text-transform: capitalize;
+	}
+
+	&__distance {
+		font-weight: $font-weight-light;
+	}
+
+	& ~ .o-mapCard {
+		margin-top: 16px;
+	}
+}

@@ -1,0 +1,99 @@
+/**
+ * The
+ */
+
+.m-switchButton {
+	position: relative;
+	display: flex;
+	width: 208px;
+	height: 32px;
+	margin: 40px auto;
+	justify-content: center;
+	align-items: center;
+	user-select: none;
+
+	&:hover {
+		cursor: pointer;
+	}
+
+	&__textContainer {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		padding: 0 26px;
+	}
+
+	&__textBG {
+		z-index: layer("cellar");
+		position: absolute;
+		background-color: $background-color-secondary;
+		width: calc(100% - (2 * 26px) + 26px);
+		left: 13px;
+		bottom: 4px;
+		// width: 100%;
+		height: 24px;
+		border-radius: 24px;
+	}
+
+	&__text {
+		z-index: layer("base");
+		color: $text-color-primary;
+		font-weight: $font-weight-bold;
+		font-size: $font-size-small;
+
+		// &:first-of-type {
+		// 	margin-right: 40px;
+		// }
+	}
+
+	&__slider {
+		position: absolute;
+		cursor: pointer;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		// background-color: $color-b;
+		transition: color 0.4s;
+		border-radius: 34px;
+
+		&::before {
+			position: absolute;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			content: "";
+			height: 32px;
+			width: 100px;
+			left: 4px;
+			// bottom: 8px;
+			background-color: $background-color-quaternary;
+			transition: 0.4s;
+			border-radius: 26px;
+			z-index: layer("base");
+		}
+	}
+
+	&__checkbox {
+		opacity: 0;
+		width: 0;
+		height: 0;
+
+		&:checked {
+			// background-color: var(--c-dark);
+
+			& + .m-switchButton__slider::before {
+				content: "";
+				background-color: $background-color-quaternary;
+				transform: translateX(96px);
+			}
+
+			// NOT WORKING
+			// & + .m-switchButton__textContainer {
+			// 	background-color: $background-color-quaternary;
+			// 	text-transform: uppercase;
+			// 	color: $text-color-secondary;
+			// }
+		}
+	}
+}

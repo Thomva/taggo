@@ -1,0 +1,121 @@
+/**
+ * A Standard Button
+ */
+
+.a-button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	user-select: none;
+	margin: 0 auto;
+	font-size: $font-size-base;
+	font-weight: $font-weight-bold;
+	width: 248px;
+	height: 48px;
+	border-radius: 40px;
+	background-color: $background-color-primary;
+	color: $text-color-quaternary;
+	cursor: pointer;
+	text-align: center;
+
+	&--secondary {
+		background-color: $background-color-secondary;
+		color: $text-color-primary;
+	}
+
+	&--tertiary {
+		background-color: $background-color-tertiary;
+		color: $text-color-primary;
+	}
+
+	&--quaternary {
+		background-color: $background-color-quaternary;
+		color: $text-color-primary;
+	}
+
+	&--outlined {
+		border: 2px solid $border-color-tertiary;
+		color: $text-color-primary;
+	}
+
+	&--ghost {
+		border: 2px solid $border-color-secondary;
+		color: $text-color-secondary;
+	}
+
+	&--low {
+		position: fixed;
+		bottom: 104px;
+		left: calc(50% - 124px);
+	}
+
+	&--disabled {
+		filter: opacity(0.5);
+	}
+
+	// &:hover {
+	// }
+
+	&--back {
+		position: fixed;
+		height: 40px;
+		width: fit-content;
+		bottom: 40px;
+		left: 0;
+		border-radius: 0 40px 40px 0;
+		font-size: $font-size-small;
+		padding-left: 32px;
+		padding-right: 20px;
+		color: $text-color-primary;
+
+		&::before {
+			content: url("../assets/icons/arrow.svg");
+			width: 8.94px;
+			padding-top: 3px;
+			padding-right: 8px;
+			filter: $icon-filter-primary;
+		}
+	}
+
+	&--logout.a-button {
+		position: fixed;
+		height: 40px;
+		width: fit-content;
+		bottom: 64px;
+		right: 0;
+		border-radius: 40px 0 0 40px;
+		font-size: $font-size-small;
+		padding-left: 20px;
+		padding-right: 32px;
+		color: $text-color-tertiary;
+		background-color: transparent;
+		border: 2px solid $border-color-tertiary;
+		border-right: none;
+	}
+
+	&--settings {
+		position: fixed;
+		height: 40px;
+		width: fit-content;
+		bottom: 64px;
+		right: 0;
+		border-radius: 40px 0 0 40px;
+		font-size: $font-size-small;
+		padding-left: 20px;
+		padding-right: 32px;
+		color: $text-color-tertiary;
+		background-color: transparent;
+		border: 2px solid $border-color-tertiary;
+		border-right: none;
+	}
+
+	&--onlyText {
+		background-color: transparent;
+		color: $text-color-tertiary;
+		cursor: default;
+	}
+
+	// @include at($screen-sm) {
+	// 	display: block;
+	// }
+}

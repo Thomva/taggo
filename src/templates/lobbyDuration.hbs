@@ -1,0 +1,45 @@
+<div class="u-container u-spacer-t">
+  {{customHeader "Game Duration"}}
+
+  {{!-- <div class="m-slider">
+    <label for="duration" class="m-slider__label"><span class="m-slider__durationSpan" id="duration-span">20</span>min</label>
+    <input type="range" min="5" max="60" value="20" id="duration" class="m-slider__inputSlider">
+    {{customSlider "duration-input" "5" "60" "20" true}}
+    <div class="m-slider__limitsContainer">
+      <span class="m-slider__lowestValue">5</span>
+      <span class="m-slider__highestValue">60</span>
+    </div>
+  </div> --}}
+
+  {{!-- <div class="m-customSlider" id="full-track">
+    <div class="m-customSlider__filledTrack" id="filled-track"></div>
+    <div class="m-customSlider__handle" id="handle-first"></div>
+    <div class="m-customSlider__handle" id="handle-second"></div>
+  </div> --}}
+  {{!-- <div class="m-slider" id="duration-container">
+    <input id="duration1" type="range" min="5" max="60" value="10"class="m-slider__inputSlider m-slider__inputSlider--test"></input>
+    <input id="duration2" type="range" min="5" max="60" value="50"class="m-slider__inputSlider m-slider__inputSlider--test"></input>
+  </div> --}}
+
+
+  <div class="m-slider" id="full-slider">
+    <label for="duration" class="m-slider__label"><span class="m-slider__durationSpan" id="duration-span">20</span>min</label>
+
+    <div class="m-slider__limitsContainer">
+      <span class="m-slider__lowestValue">5</span>
+      <span class="m-slider__highestValue">60</span>
+    </div>
+
+    <div class="m-customSlider" id="testSlider">
+      <div class="m-customSlider__filledTrack" id="filled-track"></div>
+      {{!-- <div class="m-customSlider__handle" id="handle-first"></div>
+      <div class="m-customSlider__handle" id="handle-second"></div> --}}
+      <div class="m-customSlider__handleContainer" id="handle-first"><div class="m-customSlider__handle"></div></div>
+      <div class="m-customSlider__handleContainer" id="handle-second"><div class="m-customSlider__handle"></div></div>
+    </div>
+  </div>
+
+  {{switchButton "All" "Custom" "btn-all-custom"}}
+
+  {{button "Save" 3 "btn-save" "a-button--low"}}
+</div>

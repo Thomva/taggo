@@ -1,0 +1,49 @@
+.m-slider {
+	width: 264px + 20px;
+	position: relative;
+	margin: 0 auto;
+	font-size: $font-size-small;
+	font-weight: $font-weight-light;
+	color: $text-color-tertiary;
+	margin-top: 136px;
+	margin-bottom: 100px;
+
+	&__label {
+		display: flex;
+		font-size: $font-size-large;
+		color: $text-color-quaternary;
+		justify-content: center;
+	}
+
+	&__durationSpan {
+		font-weight: $font-weight-bold;
+		margin-right: 4px;
+	}
+
+	&__inputSlider {
+		opacity: 0;
+		// border: none;
+		height: 8px;
+		width: calc(100% - 20px);
+		margin: 0 10px;
+		margin-top: 32px;
+		margin-bottom: 16px;
+
+		&--test {
+			opacity: 0.5;
+			position: absolute;
+			left: 0;
+			width: 200px;
+		}
+	}
+
+	&__limitsContainer {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 16px;
+	}
+
+	&__lowestValue {
+		padding-left: 4px;
+	}
+}

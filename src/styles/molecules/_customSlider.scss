@@ -1,0 +1,71 @@
+.m-customSlider {
+	position: absolute;
+	// width: 264px + 20px;
+	width: 264px;
+	height: 6px;
+	border-radius: 4px;
+	background-color: $background-color-secondary;
+
+	margin: 0 10px;
+	margin-top: 28px;
+	margin-bottom: 64px;
+
+	&__filledTrack {
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		border-radius: 4px;
+		background-color: $background-color-quaternary;
+	}
+
+	&__handleContainer {
+		position: absolute;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		bottom: -14px;
+		width: 34px;
+		height: 34px;
+	}
+
+	&__handle {
+		// position: absolute;
+		// bottom: -7px;
+		background-color: $background-color-quaternary;
+		// width: 16px;
+		// height: 16px;
+		width: 20px;
+		height: 20px;
+		border-radius: 50%;
+	}
+
+	// &__label {
+	// 	display: flex;
+	// 	font-size: $font-size-large;
+	// 	color: $text-color-quaternary;
+	// 	justify-content: center;
+	// }
+
+	// &__durationSpan {
+	// 	font-weight: $font-weight-bold;
+	// 	margin-right: 4px;
+	// }
+
+	// &__inputSlider {
+	// 	opacity: 0;
+	// 	height: 8px;
+	// 	width: calc(100% - 20px);
+	// 	margin: 0 10px;
+	// 	margin-top: 32px;
+	// 	margin-bottom: 16px;
+	// }
+
+	// &__limitsContainer {
+	// 	display: flex;
+	// 	justify-content: space-between;
+	// }
+
+	// &__lowestValue {
+	// 	padding-left: 4px;
+	// }
+}

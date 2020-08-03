@@ -1,0 +1,39 @@
+<div class="u-container u-spacer-t">
+  <img src="../assets/icons/settings.svg" id="btn-settings" class="a-inGameSettingsBtn" alt="settings-icon">
+  <div class="o-gameHeader" id="game-header">
+    {{!-- <img src="../assets/icons/settings.svg" id="btn-settings" class="o-gameHeader__settingsButton" alt="settings-icon"> --}}
+    <h1 class="o-gameHeader__role" id="role">Freeman</h1>
+    <span class="o-gameHeader__pointsSpan" id="score">0</span>
+  </div>
+
+  <div class="m-timer">
+    {{!-- <div class="m-timer__clockBorder">
+      <div class="m-timer__clockHand"></div>
+    </div> --}}
+    <div id="clock" class="m-timer__clock"></div>
+    <div class="m-timer__bar">
+      <div id="bar-time" class="m-timer__totalTimeBar"></div>
+      <div id="bar-time-left" class="m-timer__timeLeftBar"></div>
+    </div>
+  </div>
+
+  <div class="a-overlayText" id="countdown"></div>
+
+  <div id="game-map" class="m-map"></div>
+
+
+  <div class="o-inGameSettings" id="in-game-settings">
+    {{!-- <img src="../assets/icons/settings.svg" id="btn-settings" class="o-gameHeader__settingsButton" alt="settings-icon"> --}}
+    <div class="m-roomPlayers">
+      <div class="m-roomPlayers__playersContainer" id="players-container">
+        <div class="m-roomPlayers__moderator" id="moderator"></div>
+        <div class="m-roomPlayers__playerList" id="player-list"></div>
+      </div>
+    </div>
+    <div class="o-inGameSettings__buttonContainer">
+      {{button "Leave Game" 3 "btn-leave-game" "o-inGameSettings__button"}}
+      {{button "End Game" 3 "btn-end-game" "o-inGameSettings__button"}}
+    </div>
+
+  </div>
+</div>

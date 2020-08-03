@@ -1,0 +1,70 @@
+/**
+ * A Standard Button
+ */
+
+.a-playButton {
+	user-select: none;
+	margin: 0 auto;
+	font-size: $font-size-base;
+	font-weight: $font-weight-bold;
+	width: 248px;
+	height: 74px;
+	border-radius: 28px;
+	background-color: $background-color-primary;
+	color: $text-color-primary;
+	// box-shadow: 8px 8px 0 0 $background-color-primary;
+	margin-bottom: 32px;
+
+	&__border {
+		position: relative;
+		left: -8px;
+		top: -8px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		height: 100%;
+		border-radius: 28px;
+		box-sizing: border-box;
+		background-color: transparent;
+		border: 4px solid $border-color-quaternary;
+
+		transition: left 300ms, top 300ms;
+		transition-timing-function: ease-in-out;
+	}
+
+	&--secondary {
+		background-color: $background-color-secondary;
+	}
+
+	&--tertiary {
+		// background-color: $background-color-tertiary;
+		background-color: $background-color-secondary;
+	}
+
+	&--quaternary {
+		background-color: $background-color-quaternary;
+	}
+
+	&--finish {
+		position: fixed;
+		width: 208px;
+		height: 66px;
+		margin: 0;
+		margin-top: 40px;
+		bottom: 104px;
+		left: calc(50% - 104px);
+	}
+
+	&:hover {
+		cursor: pointer;
+
+		& > .a-playButton {
+
+			&__border {
+				left: -6px;
+				top: -6px;
+			}
+		}
+	}
+}

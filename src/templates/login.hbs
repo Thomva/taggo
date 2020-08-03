@@ -1,0 +1,17 @@
+<div class="u-container--small u-background--light">
+  {{> header }}
+  {{!-- {{pageTitleHeader}} --}}
+  <div class="m-tabs">
+    <a class="m-tabs__tab m-tabs__tab--active">Log In</a>
+    <a class="m-tabs__tab" id="btn-register">Create Account</a>
+  </div>
+  <form action="" class="o-form o-form--start">
+    {{emailInput "Email" "example@example.com" "" "email"}}
+    {{passwordInput "Password" "" "" "password"}}
+    <a class="o-form__link" id="btn-forgot-password">Forgot password?</a>
+    {{button "Log In" 3 "btn-login"}}
+    {{button "Log In with Google" 3 "btn-login-google"}}
+    {{!-- {{button "Create Account" 1 "btn-register"}} --}}
+  </form>
+</div>
+{{!-- {{> footer }} --}}

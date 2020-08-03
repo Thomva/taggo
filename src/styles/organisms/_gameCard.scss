@@ -1,0 +1,138 @@
+/**
+ * The Game Header Styles
+ */
+
+.o-gameCard {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	width: 296px;
+	height: 80px;
+	border-radius: 24px;
+	background-color: $background-color-tertiary;
+	margin: 32px auto;
+	cursor: pointer;
+	font-size: $font-size-x-small;
+	font-weight: $font-weight-light;
+	color: $text-color-primary;
+	padding: 24px;
+	// padding-left: 24px;
+	// padding-right: 40px;
+	justify-content: space-between;
+	@include shadow-down;
+
+	transition: transform 100ms;
+	transition-timing-function: ease-in-out;
+
+	&__header {
+		position: relative;
+		display: flex;
+		align-items: center;
+		width: fit-content;
+		border-radius: 24px;
+		font-size: $font-size-small;
+		font-weight: $font-weight-bold;
+		margin: 0 auto;
+		top: -40px;
+		height: 32px;
+		padding: 16px;
+		background-color: $background-color-quaternary;
+	}
+
+	// &__moderator {
+
+	// }
+
+	&__privateIconContainer {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: absolute;
+		right: -23px;
+		top: 22px;
+		width: 28px;
+		height: 32px;
+		border-radius: 0 24px 24px 0;
+		background-color: $background-color-tertiary;
+		z-index: layer("cellar");
+		// background-image: linear-gradient(to right, $background-color-quaternary, $background-color-tertiary);
+		// mask-composite: url("../assets/icons/arrow.svg");
+	}
+
+	&__privateIcon {
+		display: inline-block;
+		// background: $background-color-primary;
+		background-image: url("../assets/icons/lock.svg");
+		background-size: contain;
+		background-position: center;
+		background-repeat: no-repeat;
+		// background-clip: url("../assets/icons/arrow.svg");
+		// clip-rule: url("../assets/icons/arrow.svg");
+
+		// filter: sepia(1) brightness(1) saturate(20) hue-rotate(60deg);
+		// filter: invert(1);
+
+		/* autoprefixer: on */
+		// mask-image: url("../assets/icons/arrow.svg");
+		// -webkit-mask-image: url("../assets/icons/arrow.svg");
+		// mask-size: cover;
+		width: 10px;
+		height: 13px;
+		filter: $icon-filter-primary;
+	}
+
+	&__content {
+		position: relative;
+		display: flex;
+		justify-content: space-between;
+		padding-right: 16px;
+		bottom: 32px;
+	}
+
+	&__duration, &__map, &__players {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	&__duration > img, &__map > img, &__players > img {
+		height: 16px;
+		margin-bottom: 8px;
+		filter: $icon-filter-primary;
+	}
+
+	&__durationIcon,
+	&__mapIcon,
+	&__playersIcon {
+		background-position: center;
+		background-size: contain;
+		background-repeat: no-repeat;
+		height: 16px;
+		width: 16px;
+		margin-bottom: 8px;
+		filter: $icon-filter-primary;
+	}
+
+	&__durationIcon {
+		background-image: url("../assets/icons/duration.svg");
+	}
+
+	&__mapIcon {
+		background-image: url("../assets/icons/location.svg");
+	}
+
+	&__playersIcon {
+		background-image: url("../assets/icons/user.svg");
+	}
+
+	&__map {
+		text-transform: capitalize;
+		position: absolute;
+		width: 100%;
+		text-align: center;
+	}
+
+	&:hover {
+		transform: scale(1.05);
+	}
+}

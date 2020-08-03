@@ -1,0 +1,98 @@
+/**
+ * The
+ */
+
+.m-roomPlayers {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	// margin: 0 auto;
+	margin: 0;
+	margin-top: 40px;
+	width: 100%;
+
+	&__playersContainer {
+		// @include card(328px, 160px, 24px);
+		@include card(100%, 160px, 24px);
+		max-width: 328px;
+		// position: relative;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		background-color: $background-color-quaternary;
+		padding: 16px;
+		font-weight: $font-weight-bold;
+		color: $text-color-primary;
+		font-size: $font-size-small;
+		min-height: 15vh;
+		max-height: 33vh;
+		height: fit-content;
+		z-index: layer("base");
+
+		@include shadow-down;
+	}
+
+	&__playerList {
+		overflow-y: auto;
+		overflow-x: hidden;
+	}
+
+	&__playerElement {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 34px;
+	}
+
+	&__playerName {
+		color: $text-color-primary-2;
+	}
+
+	&__moderator {
+		text-align: center;
+	}
+
+	&__rightContainer {
+		display: flex;
+		align-items: center;
+	}
+
+	&__readySpan {
+		display: none;
+		color: $text-color-secondary;
+		font-weight: $font-weight-light;
+
+		&--ready {
+			display: initial;
+		}
+	}
+
+	&__kickButton {
+		display: block;
+		background-color: $background-color-primary;
+		padding: 4px 10px;
+		color: $text-color-tertiary;
+		border-radius: 40px;
+		margin-left: 8px;
+		cursor: pointer;
+	}
+
+	&__inviteBtn {
+		// position: absolute;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0 auto;
+		// margin-top: 16px;
+		background-color: $background-color-secondary;
+		height: 32px;
+		width: 88px;
+		border-radius: 0 0 16px 16px;
+		color: $text-color-primary;
+		cursor: pointer;
+		// bottom: -32px;
+		// left: calc(50% - 44px);
+		z-index: layer("auto");
+		font-size: $font-size-x-small;
+	}
+}

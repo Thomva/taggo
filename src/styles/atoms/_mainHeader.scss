@@ -1,0 +1,12 @@
+.a-mainHeader {
+	width: fit-content;
+	margin: 0 auto;
+	font-size: $font-size-x-large;
+	font-weight: $font-weight-x-bold;
+	color: $text-color-tertiary;
+
+	&--highCenter {
+		margin-top: 30vh;
+		text-align: center;
+	}
+}

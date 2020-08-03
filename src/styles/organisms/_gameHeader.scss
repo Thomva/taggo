@@ -1,0 +1,52 @@
+/**
+ * The Game Header Styles
+ */
+
+.o-gameHeader {
+	position: fixed;
+	display: flex;
+	width: 100%;
+	min-height: 72px;
+	background-color: $background-color-freeman;
+	top: 0;
+	left: 0;
+	justify-content: center;
+	align-items: center;
+	color: $text-color-quaternary;
+	border-radius: 0 0 36px 36px;
+	z-index: layer("base");
+
+	&--hunter {
+		background-color: $background-color-hunter;
+	}
+
+	// &__settingsButton {
+	// 	position: absolute;
+	// 	left: 24px;
+	// 	top: 20px;
+	// 	width: 30px;
+	// 	height: 30px;
+	// 	filter: $icon-filter-quaternary;
+	// }
+
+	&__role {
+		margin-top: 12px;
+		font-size: $font-size-large;
+		font-weight: $font-weight-x-bold;
+	}
+
+	&__pointsSpan {
+		display: flex;
+		position: absolute;
+		height: 32px;
+		width: 104px;
+		align-items: center;
+		justify-content: center;
+		top: 72px - 16px;
+		background-color: $background-color-quaternary;
+		border-radius: 32px;
+		color: $text-color-primary;
+		font-size: $font-size-small;
+		font-weight: $font-weight-bold;
+	}
+}

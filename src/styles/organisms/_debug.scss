@@ -1,0 +1,26 @@
+/**
+ * The Header Styles
+ */
+
+.o-debug {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: layer("header");
+	padding: rem(10px) 0;
+
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__action {
+		height: rem(24px);
+		margin-right: rem(30px);
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+}

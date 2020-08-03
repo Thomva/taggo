@@ -1,0 +1,21 @@
+/**
+ * A Small Heading
+ */
+.a-inGameSettingsBtn {
+	position: absolute;
+	left: 24px;
+	top: 20px;
+	width: 30px;
+	height: 30px;
+	filter: $icon-filter-quaternary;
+	z-index: layer("overlay");
+
+	cursor: pointer;
+
+	// transition: transform 100ms;
+	// transition-timing-function: ease-in-out;
+
+	// &:hover {
+	// 	transform: scale(1.2) rotate(60deg);
+	// }
+}

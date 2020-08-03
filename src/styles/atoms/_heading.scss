@@ -1,0 +1,23 @@
+/**
+ * A Small Heading
+ */
+// NOT IN USE?
+.a-heading {
+	color: $text-color-tertiary;
+	margin: 0 auto;
+	width: fit-content;
+	text-align: center;
+
+	&--large {
+		font-weight: $font-weight-x-bold;
+		font-size: $font-size-x-large;
+		margin-bottom: 28px;
+	}
+
+	&--small {
+		font-weight: $font-weight-light;
+		font-size: $font-size-small;
+		width: 296px;
+		margin-bottom: 96px;
+	}
+}

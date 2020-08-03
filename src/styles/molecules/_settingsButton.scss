@@ -1,0 +1,43 @@
+/**
+ * The
+ */
+
+.m-settingsButton {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	position: fixed;
+	left: 0;
+	bottom: 64px;
+	background-image: linear-gradient(to right, $background-color-tertiary, $background-color-quaternary);
+	// background-image: linear-gradient(to right, $background-color-secondary, $background-color-tertiary);
+	border-radius: 0 40px 40px 0;
+	width: 88px;
+	height: 40px;
+
+	&__button {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 50%;
+		width: 56px;
+		height: 56px;
+		color: $text-color-primary;
+		background-color: $background-color-tertiary;
+		// background-color: $background-color-secondary;
+		cursor: pointer;
+
+		transition: transform 100ms;
+		transition-timing-function: ease-in-out;
+
+		&:hover {
+			transform: scale(1.2) rotate(60deg);
+		}
+	}
+
+	&__icon {
+		width: 24px;
+		height: 24px;
+		filter: $icon-filter-primary;
+	}
+}

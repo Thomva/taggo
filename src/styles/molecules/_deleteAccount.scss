@@ -1,0 +1,36 @@
+/**
+ * The Map Styles
+ */
+
+.m-deleteAccount {
+	position: absolute;
+	// display: flex;
+	// flex-direction: column;
+	// align-items: center;
+	margin: 0 auto;
+	height: 100vh;
+	left: 0;
+	width: 100vw;
+	background-color: $background-color-quaternary;
+
+	&__heading {
+
+		&--large {
+			text-align: center;
+			margin-top: 104px;
+			margin-bottom: 32px;
+			padding: 0 56px;
+			color: $text-color-primary;
+			font-size: $font-size-x-large;
+			font-weight: $font-weight-x-bold;
+		}
+
+		&--small {
+			text-align: center;
+			color: $text-color-primary;
+			font-size: $font-size-small;
+			font-weight: $font-weight-light;
+			margin-bottom: 96px;
+		}
+	}
+}

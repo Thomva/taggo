@@ -1,0 +1,33 @@
+<div class="a-topNotification" id="copy-notification">
+  <div class="a-topNotification__content">
+    Link Copied
+  </div>
+</div>
+
+<div class="u-container u-spacer-t">
+  {{pageTitleHeader}}
+  {{!-- <h3 class="a-headingSmall">Username</h3> --}}
+  {{!-- <div class="m-verticalInput">
+    <label for="username" class="m-verticalInput__label">Username</label>
+    <input type="text" id="username" class="m-verticalInput__input" placeholder="User12345" autocomplete="off">
+  </div>
+
+  {{button "Send Invite" 3 "btn-send-invite"}} --}}
+
+  {{!-- <h3 class="a-orSeparator">or</h3> --}}
+
+  <div class="u-centerContainer u-centerContainer--absolute u-centerContainer--withPadding">
+    <div class="m-verticalInput">
+      <label for="username" class="m-verticalInput__label">Link:</label>
+      <a id="room-link" class="m-verticalInput__text">www.game.com/s4d6f54s</a>
+    </div>
+
+    <div class="m-actionButton m-actionButton--centeredText" id="btn-copy-link">
+      <span class="m-actionButton__text" id="change-username-btn-text">Copy Link</span>
+      <img class="m-actionButton__icon m-actionButton__icon--clipboard" src="../assets/icons/clipboard.svg" alt="copy-icon">
+    </div>
+  </div>
+
+  {{!-- {{button "Copy Link" 3 "btn-copy-link"}} --}}
+  {{button "Back" 2 "btn-back" "a-button--back"}}
+</div>

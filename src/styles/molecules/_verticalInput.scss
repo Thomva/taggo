@@ -1,0 +1,46 @@
+/**
+ * The logo to put in our header (navigation)
+ */
+
+.m-verticalInput {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0 auto;
+	margin-top: 72px;
+	margin-bottom: 40px;
+	// max-width: calc(100vh - ($gutter-sm * 2));
+	max-width: 100%;
+	overflow-wrap: break-word;
+	height: fit-content;
+	text-align: center;
+	font-size: $font-size-small;
+	color: $text-color-tertiary;
+
+	&__label {
+		font-weight: $font-weight-bold;
+		margin-bottom: 10px;
+	}
+
+	&__text {
+		max-width: 100%;
+	}
+
+	&__input {
+		font-weight: $font-weight-light;
+		background-color: transparent;
+		border: none;
+		border-bottom: 2px solid $border-color-tertiary;
+		caret-color: $text-color-tertiary;
+		color: $text-color-tertiary;
+		width: fit-content;
+
+		&:focus {
+			outline: none;
+		}
+
+		&::placeholder {
+			color: $text-color-secondary;
+		}
+	}
+}
